@@ -12,7 +12,7 @@ let g:gmi#current_line_cursor = ''
 let g:gmi#current_window_size = ''
 
 let s:ignored_filetypes = ['help', 'qf', 'nerdtree', 'fzf', 'terminal']
-let s:prefix = '❥ '
+let s:prefix = '🐾 '
 let s:delay_time = 100
 
 if !exists('g:gmi#ignored_filetypes') | let g:gmi#ignored_filetypes = s:ignored_filetypes | endif
@@ -114,7 +114,7 @@ function! s:LoadGitLog()
   if empty(l:git_check_output) | return | endif
   if (l:git_check_output[0] == 'fatal:') | return | endif
 
-  silent call job_start(["git", "log", "--format=%h✄%an ✧ %ar ➤ %s"], { 'callback': 'AddGitLogToCache' })
+  silent call job_start(["git", "log", "--format=%h✄%an ⏱ %ar ➤ %s"], { 'callback': 'AddGitLogToCache' })
 
   let g:gmi#loaded = 1
 endfunction
