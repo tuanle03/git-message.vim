@@ -5,7 +5,7 @@
 Recommended installation with `vundle`:
 
 ```vim
-  Plugin 'ThanhKhoaIT/git-message.vim'
+  Plugin 'tuanle03/git-message.vim'
 ```
 
 ### Configuration
