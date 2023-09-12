@@ -1,6 +1,3 @@
-" @Author:      Khoa Nguyen (thanhkhoa.it@gmail.com)
-" @Created:     2020-11-03
-
 let g:gmi#loaded = 0
 let g:gmi#popup_id = 0
 let g:gmi#render_timer_id = 0
