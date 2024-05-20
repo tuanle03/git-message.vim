@@ -111,7 +111,7 @@ function! s:LoadGitLog()
   if empty(l:git_check_output) | return | endif
   if (l:git_check_output[0] == 'fatal:') | return | endif
 
-  silent call job_start(["git", "log", "--format=%h✄%an ⏱ %ar ➤ %s"], { 'callback': 'AddGitLogToCache' })
+  silent call job_start(["git", "log", "--format=%h✄%an ⏱ %ar 💬 %s"], { 'callback': 'AddGitLogToCache' })
 
   let g:gmi#loaded = 1
 endfunction
